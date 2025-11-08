@@ -3,6 +3,11 @@ import Card from './components/Card';
 
 function App() {
   const items = ["React", "Javascript", "Vite"];
+  const cards = [
+    {title: 'Card 1', description: 'Description 1'},
+    {title: 'Card 2', description: 'Description 2'},
+    {title: 'Card 3', description: 'Description 3'}
+  ]
 
   return (
     <section>
@@ -16,7 +21,11 @@ function App() {
         }
       </ul>
       <h2>And this is a child component:</h2>
-      <Card title="Title 1" description="Esta es una descripción"></Card>
+      {
+        cards.map((card, index) => (
+          <Card key={index} title={card.title} description={card.description}/>
+        ))
+      }
     </section>
   )
 }
