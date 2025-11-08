@@ -1,4 +1,4 @@
-const Card = ({title, description}) => {
+export const Card = ({title, description}) => {
     return (
         <section>
             <h2>{title}</h2>
@@ -6,5 +6,3 @@ const Card = ({title, description}) => {
         </section>
     )
 }
-
-export default Card;
