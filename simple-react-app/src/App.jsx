@@ -1,5 +1,6 @@
-import { Counter } from './components/Counter'
-import './App.css'
+import { Counter } from './components/Counter';
+import { ToggleButton } from './components/ToggleButton';
+import './App.css';
 
 function App() {
 
@@ -7,6 +8,7 @@ function App() {
     <>
       <h1>useState</h1>
       <Counter />
+      <ToggleButton />
     </>
   )
 }
